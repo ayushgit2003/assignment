@@ -1,10 +1,10 @@
 import { Request } from 'express';
 import { Multer } from 'multer';
-import { User } from '@prisma/client';
+import { Seller,   } from '@prisma/client';
 
 declare module 'express-serve-static-core' {
   interface Request {
-      user?: User;
+      user?: Seller;
       file?: Express.Multer.File;
   }
 }

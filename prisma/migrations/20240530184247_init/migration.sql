@@ -14,7 +14,7 @@ CREATE TABLE "Book" (
     "id" SERIAL NOT NULL,
     "title" TEXT NOT NULL,
     "author" TEXT NOT NULL,
-    "publishedDate" TIMESTAMP(3) NOT NULL,
+    "publishedDate" TEXT NOT NULL,
     "price" DOUBLE PRECISION NOT NULL,
     "sellerId" INTEGER NOT NULL,
     "createdAt" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP,
