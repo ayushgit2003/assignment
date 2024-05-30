@@ -157,7 +157,7 @@ curl --location --request DELETE 'http://localhost:3000/api/books/31' \
 
 ## Video Explanation
 
-Open the video [link](https://pip.pypa.io/en/stable/) 
+Open the video [link](https://www.youtube.com/watch?v=jWu5xeuFAeU) 
     
  
 
