@@ -3,7 +3,7 @@ import { Request, Response, NextFunction } from 'express';
 import jwt from 'jsonwebtoken';
 
 
-const JWT_SECRET = process.env.JWT_SECRET || 'ayush';
+const JWT_SECRET =  'ayush';
 
 export interface AuthRequest extends Request {
   user?: Seller ;

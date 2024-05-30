@@ -4,7 +4,7 @@ import bcrypt from 'bcryptjs';
 import jwt from 'jsonwebtoken';
 
 const prisma = new PrismaClient();
-const JWT_SECRET = process.env.JWT_SECRET || 'your_jwt_secret';
+const JWT_SECRET =  'ayush';
 
 export const loginUser = async (req: Request, res: Response) => {
   const { email, password } = req.body;
@@ -15,7 +15,7 @@ export const loginUser = async (req: Request, res: Response) => {
       return res.status(401).json({ error: 'Invalid email or password' });
     }
 
-    const token = jwt.sign({ id: user.id, role: 'user' }, JWT_SECRET, { expiresIn: '4h' });
+    const token = jwt.sign({ id: user.id, role: 'user' }, JWT_SECRET,  );
     res.json({ token });
   } catch (error) {
     res.status(500).json({ error: "error message" });
